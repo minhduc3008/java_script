@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Viết chương trình để tính cước điện thoại bàn cho một hộ gia đình với các thông số như sau:
+
+            Phí thuê bao bắt buộc là 25 nghìn.
+
+            600 đồng cho mỗi gọi của 50 phút đầu tiên.
+
+            400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+
+            200 đồng cho bất kỳ mỗi phút nào sau 150 phút đầu tiên.
+        */
+    const macDinh = 25000
+    let soPhutgoi = prompt('nhập vào số phút gọi: ')
+    let total = 0
+    let moc1 = soPhutgoi * 600
+    let moc2 = (moc1 + ((soPhutgoi - 50) * 400)) - (600 * (soPhutgoi - 50)) 
+    let moc3 = moc1 + moc2 + ((soPhutgoi + 1) * 200) - (400 * (soPhutgoi + 1))
+    
+    if (soPhutgoi <= 50) {
+        total = macDinh + moc1
+        document.write(total)
+    } else if (50 < soPhutgoi <=150) {
+        total = (macDinh + moc2)
+        document.write(total)
+    }  else if (soPhutgoi > 150) {
+        total = macDinh + moc3
+        document.write(total)
+    }
+    </script>
+</body>
+</html>
