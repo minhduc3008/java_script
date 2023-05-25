@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3</title>
+  </head>
+  <body>
+    <script>
+      function chiahetcho3(n) {
+        return n % 3 == 0;
+      }
+
+      for (let number = 100; number >= 1; number--) {
+        var span = document.createElement("span"); // tạo ra thẻ span.
+        span.textContent = number + "-";
+
+        if (chiahetcho3(number)) {
+          span.style.color = "red";
+        } else {
+        }
+        document.body.append(span);
+      }
+    </script>
+  </body>
+</html>

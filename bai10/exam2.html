@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2</title>
+  </head>
+  <body>
+    <script>
+      // nhập vào 2 số
+      var numberOne = prompt("Nhập vào số thứ nhất");
+      var numberTwo = prompt("Nhập vào số thứ hai");
+
+      // chuyển kiểu dữ liệu về number
+      numberOne = Number(numberOne);
+      numberTwo = Number(numberTwo);
+
+      // kiểm tra số thứ 2 có lớn hơn số thứ nhất không
+      if (numberOne < numberTwo) {
+        alert("Số thứ nhất không được nhỏ hơn số thứ 2");
+        // in ra dãy số
+      } else {
+        for (var i = numberOne; i >= numberTwo; i--) {
+          console.log(i);
+        }
+      }
+    </script>
+  </body>
+</html>
