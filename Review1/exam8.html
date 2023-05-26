@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 8</title>
+  </head>
+  <body>
+    <script>
+      let numberOne = prompt("Nhập vào số thứ nhất:");
+      let numberTwo = prompt("Nhập vào số thứ hai:");
+      let numberThree = prompt("Nhập vào số thứ ba:");
+
+      if (numberOne > numberTwo && numberOne > numberThree) {
+        alert("Số lớn nhất là: " + numberOne);
+      } else if (numberTwo > numberOne && numberTwo > numberThree) {
+        alert("Số lớn nhất là: " + numberTwo);
+      } else if (numberThree > numberOne && numberThree > numberTwo) {
+        alert("Số lớn nhất là: " + numberThree);
+      } else if (numberOne == numberTwo && numberOne > numberThree) {
+        alert("Số lớn nhất là: " + numberOne);
+      } else if (numberTwo == numberThree && numberTwo > numberOne) {
+        alert("Số lớn nhất là: " + numberTwo);
+      } else if (numberOne == numberThree && numberOne > numberTwo) {
+        alert("Số lớn nhất là: " + numberOne);
+      } else {
+        alert("Ba số bằng nhau");
+      }
+    </script>
+  </body>
+</html>
