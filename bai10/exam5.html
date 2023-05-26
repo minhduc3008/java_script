@@ -8,18 +8,23 @@
   </head>
   <body>
     <script>
-      for (let i = 2; i <= 10; i++) {
-        document.write(`Bảng nhân ${i} <br>`);
+      document.write('<table style="border: 1px solid; width: 300px; text-align:center; margin: 0 auto">');
 
-        for (let j = 1; j < 10; j++) {
-          let x = i + "x" + j + "=" + i * j + "<br>";
-          if (i % 2 == 0) {
-            document.write("<div style='color: red'>" + x + "</div>");
-          } else {
-            document.write("<div style='color: blue'>" + x + "</div>");
-          }
+      for (let i = 2; i <= 10; i++) {
+        document.write(`<tr><td colspan="2">Bảng nhân ${i}</td></tr>`);
+
+        for (let j = 1; j <= 10; j++) {
+          document.write("<tr>");
+          let x = i * j;
+          let color = i % 2 === 0 ? "red" : "blue";
+          document.write(
+            `<td style="border: 1px solid; padding: 5px;"><div style="color: ${color}">${i} x ${j} = ${x}</div></td>`
+          );
+          document.write("</tr>");
         }
       }
+
+      document.write("</table>");
     </script>
   </body>
 </html>
