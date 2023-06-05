@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practive Array</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Danh sách sinh viên</h1>
+    <form action="">
+      <label for="id">ID</label>
+      <input type="number">
+      <label for="name">NAME</label>
+      <input type="text">
+      <label for="email">Email</label>
+      <input type="email">
+      <button class="addStudent" onclick="addStudent()">Thêm sinh viên</button>
+    </form>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <td>Tên</td>
+          <td>Email</td>
+          <td>Số điện thoại</td>
+          <td>Địa chỉ</td>
+          <td>Giới tính</td>
+          <td>Hành động</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="pagination">
+      <span>Phân trang</span>
+      <button onclick="previousPage()">Trang trước</button>
+      <button onclick="nextPage()">Trang sau</button>
+    </div>
+
+    <script src="js/exam.js"></script>
+  </body>
+</html>
