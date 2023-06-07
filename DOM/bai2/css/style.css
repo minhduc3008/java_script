@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, #main-img {
+    float: left;
+}
+
+ul li {
+    list-style-type: none
+}
+
+ul li img {
+    width: 100px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+#main-img {
+    width: 500px;
+
+}
+
+#main-img img {
+    width: 500px;
+    margin: 10px 0px 0px 50px;
+}
