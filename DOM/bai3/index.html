@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Danh sách sản phẩm</h1>
+      <ul class="tab">
+        <li class="tab-item active" onclick="changeProductList('trend', this)">Phổ biến</li>
+        <li class="tab-item" onclick="changeProductList('new', this)">Mới nhất</li>
+        <li class="tab-item" onclick="changeProductList('best-seller', this )">Bán chạy</li>
+      </ul>
+      <div class="annimation">
+        <ul id="trend" class="product-list">
+          <li><img src="img/mac1.jpg" /></li>
+          <li><img src="img/mac2.jpg" /></li>
+          <li><img src="img/mac3.jpg" /></li>
+          <li><img src="img/mac4.jpg" /></li>
+          <li><img src="img/mac5.jpg" /></li>
+          <li><img src="img/mac6.jpg" /></li>
+        </ul>
+      </div>
+      <div class="annimation">
+        <ul id="new" class="product-list">
+          <li><img src="img/mac3.jpg" /></li>
+          <li><img src="img/mac6.jpg" /></li>
+          <li><img src="img/mac4.jpg" /></li>
+          <li><img src="img/mac1.jpg" /></li>
+          <li><img src="img/mac2.jpg" /></li>
+          <li><img src="img/mac5.jpg" /></li>
+        </ul>
+      </div>
+      <div class="annimation">
+        <ul id="best-seller" class="product-list">
+          <li><img src="img/mac4.jpg" /></li>
+          <li><img src="img/mac2.jpg" /></li>
+          <li><img src="img/mac3.jpg" /></li>
+          <li><img src="img/mac5.jpg" /></li>
+          <li><img src="img/mac1.jpg" /></li>
+          <li><img src="img/mac6.jpg" /></li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/pro.js"></script>
+  </body>
+</html>
